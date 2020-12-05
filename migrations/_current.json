@@ -1,0 +1,13 @@
+{
+    "tables": {
+        "churches": {
+            "tableName": "churches",
+            "indexes": []
+        },
+        "users": {
+            "tableName": "users",
+            "indexes": []
+        }
+    },
+    "revision": 1
+}
