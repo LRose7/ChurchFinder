@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1 {
+  font-size: 45px;
+  color: seagreen;
+  font-family: 'Metrophobic', sans-serif;
+  /* margin-right: 220px; */
+}
+
+h2 {
+  color: seagreen;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* navbar styling */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+}
+
+/*churchfinder church logo image*/
+.logo-icon {
+  width: 7%;
+  height: auto;
+  margin-left: 50px;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-icons {
+  width: 17px;
+  height: auto;
+}
+
+.routelink {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.routelink:hover {
+  color: seagreen;
+}
+
+#background-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive background image on home page */
+#home-background-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-text {
+  position: absolute;
+  bottom: 43%;
+}
+.home-text h1 {
+  color: black;
+}
+
+* {
+  box-sizing: border-box
+}
+
+/*STYLING FOR INPUTS*/
+
+input {
+  display:inline-block;
+  width: 100%;
+  font-weight: bold;
+  padding: 7px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background: #d0f5de;
+  margin: 4px 0 15px 0;
+
+}
+
+input:focus {
+  background-color: rgb(240, 188, 164);
+  outline: none;
+}
+
+.inputs {
+  display:inline-block;
+  width: 100%;
+  font-weight: bold;
+  padding: 7px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background: #d0f5de;
+  margin: 4px 0 15px 0;
+}
+
+.inputs:focus {
+  background-color: rgb(240, 188, 164);
+  outline: none;
+}
+
+#state-input {
+  display:block;
+  width: 30%;
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 4px;
+  border: solid 1px black;
+  background: #d0f5de;
+  margin: 4px 2px 15px 2px;
+}
+
+#state-input:focus {
+  background-color: rgb(240, 188, 164);
+  outline: none;
+}
+
+#postalcode-input {
+  display:block;
+  width: 50%;
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 4px;
+  border: solid 1px black;
+  background: #d0f5de;
+  margin: 4px 2px 15px 2px;
+}
+
+#postalcode-input:focus {
+  background-color: rgb(240, 188, 164);
+  outline: none;
+}
+
+/* Styles the search bar underneath the map */
+.form-control {
+  display:inline-block;
+  width: 40%;
+  font-weight: bold;
+  padding: 7px;
+  border: solid 1px black;
+  border-radius: 4px;
+  background: #d0f5de;
+  margin: 4px 0 15px 60px;
+}
+
+.form-control:focus {
+  background-color: rgb(240, 188, 164);
+  outline: none;
+}
+
+/*LINK STYLING*/
+
+.addchurch-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+
+}
+
+#addchurchlink {
+  color: black;
+  font-size: 30px;
+
+}
+
+#addchurchlink:hover {
+  color: rgb(245, 168, 26);
+}
+
+#loginlink {
+  color: black;
+  font-size: 20px;
+}
+
+#loginlink:hover {
+  color: rgb(19, 27, 151);
+}
+
+
+#signuplink {
+  color: black;
+  font-size: 20px;
+}
+
+#signuplink:hover {
+  color: rgb(19, 27, 151);
+}
+
+/* Styles the Churches List */
+#churchsearch-display {
+  display:inline-block;
+  width: 50%;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+  background: #8bec90;
+  margin: 20px 0 15px 400px;
+}
+
+/* Styles the unordered churches list */
+.list-group {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.list-group-item {
+  margin-top: 20px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+fieldset {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+ }
+
+legend {
+  padding: 10px;
+}
+
+/* Set a style for all buttons */
+
+button {
+  background-color: #3f9142;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+  opacity: 0.9;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:active {
+  transform: translateY(4px);
+}
+
+/* Float signup button */
+
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+
+.container {
+  position: absolute;
+  margin: 40px;
+  max-width: 600px;
+  padding: 16px;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Clear floats */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.mapContainer {
+  border: solid 2px black;
+  /* margin-top: 20px; */
+  margin-left: 20px;
+}
+
+.marker-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.marker-btn img {
+  width: 35px;
+  height: 35px;
+}
+
+.marker-popup {
+  list-style-type: none;
+}
+
+.close-popup-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-popup {
+  background-color: grey;
+  color: white;
+  display: inline-block;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid black;
+  outline: none;
+  width: 30px;
+}
+
+.close-popup:active {
+  transform: translateY(4px);
+}
+
+.popup {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.church-links {
+  color: rgb(1, 5, 248);
+}
+
+.Login form {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+/*RESPONSIVE STYLING*/
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+  @media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0px;
+    }
+
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+ .errorMessage{
+  color: #ff9800;
+ }
+
+ /*IPAD*/
+ @media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 100%;
+  }
+
+  nav {
+    max-height: 6vh;
+  }
+
+  .logo-icon {
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    margin-left: 40px;
+  }
+
+  h1{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  button{
+    width: 150px;
+  }
+
+  .home-text {
+    bottom: 63%;
+  }
+
+  .homepage-title{
+    margin-left: 60px;
+    font-size: 25px;
+  }
+
+  #churchsearch-input {
+    display:inline-block;
+    width: 70%;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background: #8bec90;
+    margin: 20px 0 15px 250px;
+  }
+
+ }
+
+ /*CELL PHONE*/
+ @media screen and (max-width: 678px) {
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .nav-icons {
+    width: 15px;
+    height: auto;
+  }
+  .routelink {
+    letter-spacing: 0px;
+  }
+
+  button{
+    width: 130px;
+    height: 40px;
+  }
+
+  .homepage-title{
+    margin-left: 40px;
+    font-size: 25px;
+  }
+
+  #background-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .mapContainer{
+    margin-top: 20px;
+  }
+
+  #churchsearch-input {
+    display:inline-block;
+    width: 90%;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background: #8bec90;
+    margin: 20px 0 15px 200px;
+  }
+ }
+
