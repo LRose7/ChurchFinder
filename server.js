@@ -15,6 +15,7 @@ const log = config.log();
 const indexRouter = require('./routes/index');
 const churchesRouter = require('./routes/churches');
 const usersRouter = require('./routes/users');
+const db = require('./models');
 
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
@@ -68,11 +69,6 @@ app.use('/', indexRouter);
 app.use('/churches', churchesRouter);
 app.use('/users', usersRouter);
 
-// Require Route
-// const api = require('./routes/routes');
-// Configure app to use route
-// app.use('/api/v1/', api);
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     next(createError(404));
@@ -81,11 +77,13 @@ app.use(function(req, res, next) {
 
 // Middleware that informs the express application to serve our compiled React files
 if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
-    app.use(express.static(path.join(__dirname, 'client/build')));
-
-    app.get('*', function (req, res) {
-        res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    app.use(express.static(path.join(__dirname, '../client/build')));
+    app.use((req, res) => {
+        res.sendFile(path.join(__dirname, '../client/build/index.html'));
     });
+    // app.get('*', function (req, res) {
+    //     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    // });
 };
 
 // Catch any bad requests
